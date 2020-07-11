@@ -1,0 +1,250 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8 mb-3">
+
+            <div id="ShoeCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="~/Content/images/shoe1More/more1.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="~/Content/images/shoe1More/more2.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="~/Content/images/shoe1More/more3.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="~/Content/images/shoe1More/more4.png" alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="~/Content/images/shoe1More/more5.png" alt="Fifth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="~/Content/images/shoe1More/more6.png" alt="Sixth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#ShoeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ShoeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <div class="card" data-target='#ShoeCarousel' data-slide-to="0">
+                        <img class="card-img-top" src="~/Content/images/shoe1More/more1.png">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" data-target='#ShoeCarousel' data-slide-to="1">
+                        <img class="card-img-top" src="~/Content/images/shoe1More/more2.png">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" data-target='#ShoeCarousel' data-slide-to="2">
+                        <img class="card-img-top" src="~/Content/images/shoe1More/more3.png">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" data-target='#ShoeCarousel' data-slide-to="3">
+                        <img class="card-img-top" src="~/Content/images/shoe1More/more4.png">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" data-target='#ShoeCarousel' data-slide-to="4">
+                        <img class="card-img-top" src="~/Content/images/shoe1More/more5.png">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" data-target='#ShoeCarousel' data-slide-to="5">
+                        <img class="card-img-top" src="~/Content/images/shoe1More/more6.png">
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!-- ./col-8 -->
+        <div class="col-lg-4">
+            <h4 class="text-dark">Nike Trainers 1 <span class="float-right small">£114.99</span></h4>
+            <h6 class="text-dark mb-0">Mens' Shoes</h6>
+            <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></div>
+            <div class="btn-group-toggle px-5 mt-4" data-toggle="buttons">
+                <p class="text-center m-0 p-0"><a href="#" class="text-dark text-center" data-toggle="modal" data-target="#sizeGuideModal">Size Guide</a></p>
+                <label class="btn btn-md btn-block btn-outline-secondary m-1">
+                    <input type="radio" name="options" id="option1" autocomplete="off">4
+                </label>
+                <label class="btn btn-md btn-block btn-outline-secondary m-1 disabled">
+                    <input type="radio" name="options" id="option2" autocomplete="off" disabled>4.5 (out of stock)
+                </label>
+                <label class="btn btn-md btn-block btn-outline-secondary m-1">
+                    <input type="radio" name="options" id="option2" autocomplete="off">5
+                </label>
+                <label class="btn btn-md btn-block btn-outline-secondary m-1">
+                    <input type="radio" name="options" id="option2" autocomplete="off">5.5
+                </label>
+                <label class="btn btn-md btn-block btn-outline-secondary m-1 disabled">
+                    <input type="radio" name="options" id="option2" autocomplete="off" disabled>6 (out of stock)
+                </label>
+                <label class="btn btn-md btn-block btn-outline-secondary m-1">
+                    <input type="radio" name="options" id="option2" autocomplete="off">6.5
+                </label>
+                <label class="btn btn-md btn-block btn-outline-secondary m-1">
+                    <input type="radio" name="options" id="option2" autocomplete="off">7
+                </label>
+            </div>
+            <div class="px-3">
+                <a href="#" class="btn btn-success btn-lg btn-block mt-3">Add to Basket</a>
+            </div>
+
+        </div><!-- ./col-4 -->
+    </div><!-- ./row -->
+
+    <hr>
+
+    <!--===============================================-->
+    <ul class="nav nav-tabs nav-fill justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="description-tag" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="delivery-tab" data-toggle="tab" href="#delivery" role="tab" aria-controls="delivery" aria-selected="false">Delivery Info</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="returns-tab" data-toggle="tab" href="#returns" role="tab" aria-controls="returns" aria-selected="false">Returns</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="description" role="tabpanel">
+            <h2 class="mt-4">Product details for Nike Trainers 1 - Men Shoes</h2>
+            <h6>Color: Off Noir-Gunsmoke-University Red</h6>
+            <h4 class="mt-4">Convincing at first sight</h4>
+            <p>Nike's new Trainers 1 offers you a sneaker of a very special kind. The innovative and highly efficient React midsole cushioning stays with you, but Nike peps up the simple sole design with eye-catching, off-hook plugs that give you a special eye-catcher! A flexible upper, a wavy lacing and extra heel cladding complete the Trainers 1 package and offer not only a comfortable, but also an extremely stylish sneaker that will not only inspire on the running track or in the studio, but also in your free time! Wear it whenever and wherever you want, you'll love the React Element - guaranteed!</p>
+            <h4 class="mt-4">The React Element has everything you need</h4>
+            <ul>
+                <li>Upper material: synthetic / leather</li>
+                <li>Inner material: textile</li>
+                <li>Insole: textile</li>
+                <li>Lace up closure (5 loop)</li>
+                <li>React midsole</li>
+                <li>Swoosh design</li>
+                <li>Pull tab on the heel</li>
+                <li>Heel formwork</li>
+                <li>Nike react logo on the tongue</li>
+                <li>Abrasion-resistant outsole</li>
+            </ul>
+        </div>
+        <div class="tab-pane fade mt-5" id="delivery" role="tabpanel">
+            <h2 class="mt-4">Delivery Information</h2>
+            <p>Free Delivery:</p>
+            <ul>
+                <li><p>Free standard delivery with your GoldenShoe account.</p></li>
+                <li><p>Standard deliveries arrive in 2-3 days; we deliver 7 days a week.</p></li>
+                <li><p>You can select a day and one-hour time slot with DPD Precise after placing your order.</p></li>
+                <li><p>For next-day delivery, order before 12 noon Monday to Thursday.</p></li>
+                <li><p>Click & Collect available at Nike stores and 100s of other convenient locations.</p></li>
+                <li><p>You can return your order for any reason, free of charge, within 60 days.</p></li>
+            </ul>
+            <p>Some Exclusions Apply. Learn more about GoldenShoe.com delivery options and returns policy.</p>
+        </div>
+        <div class="tab-pane fade mt-5" id="returns" role="tabpanel">
+            <h2 class="mt-4">Returns Policy</h2>
+            <p>Returns Policy:</p>
+            <p>Please return your unwanted goods to us within 14 days. If you would like an exchange send back to us within 28 days. Personalised items will not be accepted unless the personalised text is incorrect or if the item is faulty.</p>
+            <p>Free return to store: If you've paid by credit or debit card just pop down to one of our GoldenShoe stores nationwide, take your dispatch note and the goods you want to return, and the store team will be happy to offer you a refund or exchange.</p>
+            <p>If you've paid using PayPal, Apple Pay or Klarna, your local store will send your order back to our distribution centre on your behalf so the transaction can be reversed, or your order can be exchanged and resent back out to you.</p>
+            <p>
+                Return your parcel at your nearest location or arrange a home collect with Collect+, InPost Lockers & Hermes.
+                Register your return at the below link:
+            </p>
+            <a href="#">http://www.JustALink.com</a>
+        </div>
+    </div>
+    <!--===============================================-->
+    <!-- Different Colors Section -->
+    <div class="my-5">
+        <h5 class="mt-4">Different Colors/Styles</h5>
+        <div class="row">
+            <div class="col-2">
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="~/Content/images/shoe1More/other1.png"></a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="~/Content/images/shoe1More/other2.png"></a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="~/Content/images/shoe1More/other3.png"></a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="~/Content/images/shoe1More/other4.png"></a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="~/Content/images/shoe1More/other5.png"></a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="~/Content/images/shoe1More/other6.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reviews Section -->
+    <div class="my-5">
+        <h2 class="mt-4">Reviews</h2>
+        <div class="card mb-3 mt-4" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <img src="~/Content/images/shoe1More/shoe1Review.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Very comfortable!</h5>
+                        <p class="card-text">I have been wearing these shoes for about a month now and they are very comfortable to walk in! Very stylish too. Definitely recommend.</p>
+                        <p class="card-text m-0 text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="card-text"><small class="text-muted">Review posted 3 days ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL-->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="sizeGuideModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Size Guide UK</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="img-fluid" src="~/Content/images/SizeGuide.png">
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
